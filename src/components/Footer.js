@@ -10,9 +10,8 @@ const FooterWrapper = styled.div`
     font-size: 16px;
     text-align: center;
     position: absolute;
-    left:0;
-    bottom:0;
-    right:0;
+    left: 0;
+    bottom: 0;
   }
   .fab {
     margin: 10px;

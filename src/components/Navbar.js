@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,UncontrolledDropdown,DropdownToggle,DropdownMenu,DropdownItem,NavbarText} from "reactstrap";
+import { Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem} from "reactstrap";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const NavStyle = styled.div `
 a {
-  color: white;
+  color: #eebe68;
   margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 .navColor {
   background-color: #4c5b5e;
@@ -20,36 +21,23 @@ const NavBar = () => {
   return (
     <NavStyle>
       <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <Navbar justify-content-center expand="md" className="navColor">
+        <NavbarBrand>
+          <Link to ="/">Home</Link>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-            <Link to ="/facts">Facts</Link>
+            <Link to ="/about">About</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            <Link to ="/projects">Projects</Link>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+            <Link to ="/contact">Contact</Link>
+            </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>

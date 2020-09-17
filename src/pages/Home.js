@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import logo from "../img/logo.png"
 
 const MainStyle =styled.div `
+align-items: center;
 p {
   color: #eebe68;
   text-align: center;
