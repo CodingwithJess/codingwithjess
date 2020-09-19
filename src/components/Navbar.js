@@ -7,11 +7,15 @@ const NavStyle = styled.div `
 a {
   color: #eebe68;
   margin-right: 10px;
+  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
 .navColor {
   background-color: #4c5b5e;
   opacity:.75;
+}
+.navbar-toggler-icon {
+  color: white !important; 
 }
 `
 
