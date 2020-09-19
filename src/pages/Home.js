@@ -22,6 +22,16 @@ const MainStyle = styled.div`
   .social-links {
     text-align: center;
   }
+  .neon-text {
+  text-shadow: 
+  .1vw 0vw .25vw #e2cfb2, .2vw 0vw .25vw #e2cfb2, .4vw 0vw .25vw #e2cfb2, 
+  .1vw 0vw   0vw #e9bf77, .2vw 0vw   0vw #e9bf77, .4vw 0vw   0vw #e9bf77,
+  .1vw 0vw  .1vw #e9bf77, .2vw 0vw  .1vw #e9bf77, .4vw 0vw  .1vw #e9bf77,
+  .1vw 0vw   2vw #e9bf77, .2vw 0vw   2vw #e9bf77, .4vw 0vw   2vw #e9bf77, 
+  .1vw 0vw   1vw #eebe68, .2vw 0vw   1vw #eebe68, .4vw 0vw   5vw #eebe68, 
+  .1vw 0vw   5vw #eebe68, .2vw 0vw  20vw #eebe68, .4vw 0vw  10vw #eebe68,
+  .1vw 0vw  10vw #eebe68, .2vw 0vw  30vw #eebe68, .4vw 0vw  10vw #eebe68;
+}
 `;
 
 const Home = () => {
@@ -39,7 +49,7 @@ const Home = () => {
                 <p>
                   HTML/CSS | Bootstrap | JavaScript | MongoDB | Express | React | Node
                 </p>
-                <div className="social-links">
+                <div className="social-links neon-text">
                   {/* LinkedIn */}
                   <a href="https://www.linkedin.com/in/edens-jessica/" rel="noopener noreferrer" target="_blank">
                     <i className="fab fa-linkedin-in fa-4x" aria-hidden="true"/>

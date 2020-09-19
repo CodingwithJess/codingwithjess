@@ -15,6 +15,8 @@ p {
   opacity:.92;
   border-radius:12px;
   color: #ffdfaf;
+  display: flex;
+  vertical-align: middle;
 }
 #pic {
   text-align: center;
@@ -37,6 +39,15 @@ h1 {
   .1vw 0vw   5vw #eebe68, .2vw 0vw  20vw #eebe68, .4vw 0vw  10vw #eebe68,
   .1vw 0vw  10vw #eebe68, .2vw 0vw  30vw #eebe68, .4vw 0vw  10vw #eebe68;
 }
+.fab {
+    margin: 10px;
+    color: #4c5b5e;
+  }
+  .social-links {
+    margin-top:80px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 `
 
 const About = () => {
@@ -83,6 +94,16 @@ const About = () => {
                   </Col> 
                 </Row>
               </div>
+              <div className="social-links neon-text">
+                  {/* LinkedIn */}
+                  <a href="https://www.linkedin.com/in/edens-jessica/" rel="noopener noreferrer" target="_blank">
+                    <i className="fab fa-linkedin-in fa-4x" aria-hidden="true"/>
+                  </a>
+                  {/* Github */}
+                  <a href="https://github.com/CodingwithJess" rel="noopener noreferrer" target="_blank">
+                    <i className="fab fa-github fa-4x" aria-hidden="true" />
+                  </a>
+                </div>
           </AboutStyle>
         </Container>
     </>
