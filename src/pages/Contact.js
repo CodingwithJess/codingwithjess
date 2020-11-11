@@ -54,7 +54,7 @@ const ContactStyle = styled.div`
 
   .fa,
   .fas {
-    font-size: 55px;
+    font-size: 45px;
     margin: 10px;
     padding: 10px;
   }
